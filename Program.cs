@@ -9,6 +9,7 @@ namespace CSProjectChange
     {
         static void Main(string[] args)
         {
+            //﻿<?xml version="1.0" encoding="utf-8"?>
             Console.WriteLine("Small tool to change version and other tags in csproj modern format files.");
             Console.WriteLine("Usage: CSProjectChange filename tag-name new-value");
             Console.WriteLine("Use folder instead filename to update all csproj files recursively.");
@@ -59,6 +60,14 @@ namespace CSProjectChange
 
             //save the XML back as file
             doc.Save(filename);
+
+            var lines = File.ReadAllLines(filename).ToList();
+            if (lines[0].Contains("xml"))
+            {
+                lines.RemoveAt(0);
+            }
+
+            File.WriteAllLines(filename, lines);
         }
     }
 }
