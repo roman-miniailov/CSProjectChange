@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CSProjectChange": {
+      "commandName": "Project",
+      "commandLineArgs": "\"c:\\Projects\\_Projects\\MediaFrameworkDotNet\\_SOURCE\" AssemblyVersion 14.0.5.0"
+    }
+  }
+}
