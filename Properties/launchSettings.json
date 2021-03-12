@@ -2,7 +2,7 @@
   "profiles": {
     "CSProjectChange": {
       "commandName": "Project",
-      "commandLineArgs": "\"c:\\Projects\\_Projects\\MediaFrameworkDotNet\\_SOURCE\" AssemblyVersion 14.0.5.0"
+      "commandLineArgs": "-f \"c:\\Projects\\_Projects\\MediaFrameworkDotNet\\_SETUP\\FILES\\Demos\\Media Player SDK\\WinForms\\VB .Net\\Audio Player\" -m package -t \"VisioForge.DotNet.Core.Redist.VLC.x64\" -v \"x.x.x\""
     }
   }
 }
